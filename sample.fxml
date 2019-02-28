@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_Converter">
+   <children>
+      <Pane blendMode="MULTIPLY" prefHeight="437.0" prefWidth="765.0" style="-fx-background-color: black;">
+         <children>
+            <TextField fx:id="Input" alignment="CENTER" layoutX="21.0" layoutY="143.0" prefHeight="39.0" prefWidth="150.0" promptText="Input...." style="fx-border: white;">
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant azimuth="236.96" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font></TextField>
+            <ChoiceBox fx:id="from" layoutX="185.0" layoutY="143.0" prefHeight="39.0" prefWidth="150.0" style="-fx-border-color: grey;" />
+            <Button fx:id="convert" layoutX="202.0" layoutY="234.0" mnemonicParsing="false" text="Convert" />
+            <ChoiceBox fx:id="choose" layoutX="192.0" layoutY="40.0" prefWidth="150.0" />
+            <Label layoutX="202.0" layoutY="102.0" prefHeight="27.0" prefWidth="59.0" style="-fx-cursor: black;" text="From" textFill="#3dbc2f">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <ChoiceBox fx:id="to" layoutX="354.0" layoutY="143.0" prefHeight="39.0" prefWidth="165.0" style="-fx-border-color: white;" />
+            <Label layoutX="371.0" layoutY="102.0" prefHeight="27.0" prefWidth="66.0" text="To" textFill="#08da1a">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label layoutX="119.0" layoutY="4.0" prefHeight="35.0" prefWidth="335.0" text="Welcome To The Converter" textFill="#fffafa">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="471.0" layoutY="355.0" mnemonicParsing="false" text="change Field" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
